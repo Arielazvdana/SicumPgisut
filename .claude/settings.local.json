@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --no-turbopack)",
+      "Read(//usr/local/**)",
+      "Read(//usr/**)",
+      "Bash(command -v node)",
+      "Bash(echo $PATH)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/ariel/AppData/Roaming/**)",
+      "Read(//c/Users/ariel/AppData/Local/Programs/**)",
+      "Read(//c//**)",
+      "Bash(powershell.exe -Command \"Get-Command node,npm,npx -ErrorAction SilentlyContinue | Select-Object Name,Source\")",
+      "Read(//c/Users/ariel/**)",
+      "Bash(gh auth:*)",
+      "Bash(find /c/Users/ariel/AppData/Local/Microsoft/WindowsApps -name node*)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/nodejs:/c/Users/ariel/AppData/Roaming/npm\")",
+      "Bash(npm --version)",
+      "Bash(powershell.exe -Command \"node --version; npm --version\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" \"/c/Program Files/nodejs/node_modules/npm/bin/npm-cli.js\" install)",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(npm install:*)"
+    ]
+  }
+}
