@@ -3,10 +3,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getPrompt } from '@/lib/prompts';
 import { MeetingType } from '@/lib/types';
 
-const client = new OpenAI();
-
 export async function POST(req: NextRequest) {
   try {
+    const client = new OpenAI();
     const { meetingType, transcript, clientName, date } = await req.json() as {
       meetingType: MeetingType;
       transcript: string;
