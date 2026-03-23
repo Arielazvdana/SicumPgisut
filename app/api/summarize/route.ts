@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
 
     const message = await client.chat.completions.create({
       model: 'gpt-4o',
-      max_tokens: 4000,
+      max_tokens: 16000,
       messages: [
         { role: 'system', content: getPrompt(meetingType) },
         { role: 'user', content: userMessage }
